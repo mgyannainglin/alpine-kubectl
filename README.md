@@ -1,5 +1,5 @@
 # alpine-kubectl
-Built the docker image with alpine linux for kubectl command
+Built the docker image with alpine linux for kubectl command including k8s config file.
 
 # Step by step guide
 1. First download or clone this repo.

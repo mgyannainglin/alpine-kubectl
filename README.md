@@ -1,18 +1,19 @@
 # alpine-kubectl
-alpine linux with kubectl command
+Built the docker image with alpine linux for kubectl command
 
-Built the docker image with alpine linux for kubectl command 
-
-## Docker build
+# Step by step guide
+1. First download or clone this repo.
+2. Go to downloaded directory.
+3. Paste your kube-adm config to example-k8sconfig.
+3. Docker build.
 ```
 docker build -t alpine-kubectl:v1 .
 ```
-
-## Run the docker image that you built
+4. Run the docker image that you built
 ```
 docker run -it --name {name of container} -d alpine-kubectl:v1
 ```
-## Go to docker container shell
+5. Go to docker container shell
 ```
 docker exec -it {name of container} /bin/sh
 ```

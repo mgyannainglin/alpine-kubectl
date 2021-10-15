@@ -1,1 +1,20 @@
-paste your k8s config file here and build your image with docker
+#This is example kube config file, you can paste your k8s kube config here and built
+apiVersion: v1
+clusters:
+- cluster:
+    server: http://localhost:8080
+  name: local-server
+contexts:
+- context:
+    cluster: local-server
+    namespace: the-right-prefix
+    user: myself
+  name: default-context
+current-context: default-context
+kind: Config
+preferences: {}
+users:
+- name: myself
+  user:
+    password: secret
+    username: admin

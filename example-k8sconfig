@@ -1,4 +1,4 @@
-#This is example kube config file, you can paste your k8s kube config here and built
+#This is the example kube config file, you can paste your k8s kube config here and built
 apiVersion: v1
 clusters:
 - cluster:

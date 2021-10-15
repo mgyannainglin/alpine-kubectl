@@ -17,4 +17,5 @@ docker run -it --name {name of container} -d alpine-kubectl:v1
 ```
 docker exec -it {name of container} /bin/sh
 ```
-## Now you can access your k8s cluster from alpine container
+## Now you can access your k8s cluster from alpine container with kubectl command.
+## In this way you can use this docker container as a jump host of your k8s cluster access.
